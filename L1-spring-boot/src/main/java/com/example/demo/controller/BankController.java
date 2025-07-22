@@ -23,6 +23,8 @@ import java.util.List;
 @RequiredArgsConstructor
 public class BankController {
 
+    //Fixes
+
     private final BankManagementService bankService;
 
     // Ендпоінт для реєстрації користувача

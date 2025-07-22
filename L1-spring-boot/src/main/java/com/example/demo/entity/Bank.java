@@ -18,6 +18,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Bank {
+
+    //Fixes
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
