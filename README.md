@@ -15,8 +15,7 @@ Development Documentation
 
 ## Change Log
 
-```
-mermaid 
+```mermaid 
 gitGraph 
     commit id: "Initial commit" 
     commit id: "Initial commit" 
