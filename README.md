@@ -15,31 +15,37 @@ Development Documentation
 
 ## Change Log
 
-```mermaid 
-gitGraph 
-git checkout -b main
-git commit -m "Initial commit"
+```mermaid
+gitGraph
+   commit id: "Initial commit" tag: "main"
+   branch dev
+   checkout dev
+   commit id: "Initial documentation"
 
-git checkout -b dev
-git commit -m "Initial documentation"
+   branch feature/backend
+   checkout feature/backend
+   commit id: "Initial Spring Boot Project"
 
-git checkout -b feature/backend
-git commit -m "Initial Spring Boot Project"
+   branch hotfix/backend
+   checkout hotfix/backend
+   commit id: "BankController and Bank entity fixes"
+   commit id: "Mapper and Repository fixes"
 
-git checkout -b hotfix/backend
-git commit -m "BankController and Bank entity fixes"
-git commit -m "Mapper and Repository fixes"
+   checkout feature/backend
+   merge hotfix/backend id: "Merge hotfix/backend into feature/backend"
 
-git checkout feature/backend
-git merge hotfix/backend -m "Merge hotfix/backend into feature/backend"
+   checkout dev
+   merge feature/backend id: "Merge feature/backend into dev"
 
-git checkout dev
-git merge feature/backend -m "Merge feature/backend into dev"
+   branch feature/frontend
+   checkout feature/frontend
+   commit id: "index first ver."
+   commit id: "style first ver."
 
-git checkout -b feature/frontend
-git commit -m "index first ver."
-git commit -m "style first ver."
+   checkout dev
+   merge feature/frontend id: "Merge feature/frontend into dev"
 
-git checkout dev
-git merge feature/frontend -m "Merge feature/frontend into dev"
+   checkout main
+   merge dev id: "Merge dev into main"
 ```
+
