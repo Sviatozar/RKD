@@ -4,7 +4,7 @@
 
 
 ## Структура проєкту
-project/
+project
 │
 
 ├── index.html # Основний HTML-файл сайту
