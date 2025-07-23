@@ -1,0 +1,45 @@
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+
+# Виключення логів та тимчасових файлів
+*.log
+*.tmp
+
+# Виключення файлів IDE
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Виключення згенерованих файлів Maven або Gradle
+target/
+build/
+
+# Виключення тимчасових конфігів
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/
+.gradle/
+**/build/
+
+# Виключення кешу
+**/.classpath
+**/.project
+**/.settings/
+**/.vscode/
+
+# OS-специфічні
+.DS_Store
+Thumbs.db
+
+# Інші
+*.swp
+*.swo
+*.bak
+
+# Якщо використовуєш dotenv
+.env
